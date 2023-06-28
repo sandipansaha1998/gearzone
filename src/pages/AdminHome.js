@@ -88,17 +88,6 @@ const AdminHome = () => {
     dispatch(deleteProduct(selectedProduct));
     handleCloseDeleteModal();
   };
-  // useEffect(() => {
-  //   const fetchProducts = async () => {
-  //     const fetchProductsResponse = await fetchProductsAPI();
-  //     if (fetchProductsResponse) {
-  //       dispatch(setProducts(fetchProductsResponse.data));
-  //     } else {
-  //       console.log("Error");
-  //     }
-  //   };
-  //   fetchProducts();
-  // }, [dispatch]);
 
   useEffect(() => {
     setFormData({ ...selectedProduct });
