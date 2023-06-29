@@ -92,7 +92,6 @@ const Navbar = () => {
           }}
         />
       </div>
-      <div className="fs-5 fw-bold ms-auto ms-md-0 ">Login</div>
       <div>
         <CartDrawer />
       </div>
