@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Gearzone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Frontend mock up for ecommerce web application.It combines functionality with aesthetics, providing a delightful shopping experience. Its user-friendly interface, efficient product filtering, and convenient cart management make finding and purchasing your desired products a breeze. The application also implements admin view where one can view add and edit products.
+> React js served as frontend framework with Redux as the state management tool.
 
-## Available Scripts
+## [Hosted URL link](https://gearzone.netlify.app/)
 
-In the project directory, you can run:
+### Features
 
-### `npm start`
+- [x] Landing Home page with carousel and product cards of different category.
+- [x] Filter products on the basis of category,color,price and sports.
+- [x] Simple and efficient cart
+- [x] Admin panel with CRUD features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Technology Stack Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+| Particulars         | Version    |
+| ------------------- | ---------- |
+| @emotion/react      | 11.11.1    |
+| @emotion/styled     | 11.11.0    |
+| @mui/icons-material | 5.11.16    |
+| @mui/material       | 5.13.6     |
+| @reduxjs/toolkit    | 1.9.5      |
+| axios               | 1.4.0      |
+| bootstrap           | 5.3.0      |
+| react               | 18.2.0     |
+| react-bootstrap     | 2.8.0      |
+| react-dom           | 18.2.0     |
+| react-redux         | 8.1.1      |
+| react-router-dom    | 6.14.0     |
+| react-scripts       | 5.0.1      |
+| react-toastify      | 9.1.3      |
+| redux-thunk         | 2.4.2      |
+| styled-components   | 6.0.0-rc.6 |
 
-### `npm test`
+### Directory Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+.
+├── public
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── manifest.json
+│   └── robots.txt
+└── src
+    ├── App.css
+    ├── App.js
+    ├── api
+    │   └── index.js
+    ├── assets
+    │   └── brand
+    │       ├── brand.png
+    │       ├── brand_mob.png
+    │       └── brand_pc.png
+    ├── components
+    │   ├── Carousel.js
+    │   ├── CartDrawer.js
+    │   ├── Categories.js
+    │   ├── FilterDrawer.js
+    │   ├── Navbar.js
+    │   ├── Notification.js
+    │   └── Product.js
+    ├── index.css
+    ├── index.js
+    ├── netlify.toml
+    ├── pages
+    │   ├── AdminHome.js
+    │   ├── Home.js
+    │   └── Store.js
+    └── redux
+        ├── actions
+        │   ├── admin.js
+        │   ├── cart.js
+        │   └── products.js
+        ├── constants
+        │   └── action-types.js
+        ├── reducers
+        │   ├── admin.js
+        │   ├── cart.js
+        │   ├── index.js
+        │   └── products.js
+        └── store.js
+```
