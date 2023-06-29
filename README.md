@@ -11,6 +11,7 @@
 - [x] Filter products on the basis of category,color,price and sports.
 - [x] Simple and efficient cart
 - [x] Admin panel with CRUD features
+- [x] Fully responsive for mobiles , tablets and desktops 
 
 ### Technology Stack Used
 
